@@ -3,7 +3,7 @@ import pynput.mouse
 from PIL import ImageGrab
 from pynput import keyboard
 from pynput.mouse import Controller as MouseController
-from pynput.keyboard import Controller as KeyboardController
+from pynput.keyboard import Controller as KeyboardController, KeyCode, Key
 from sudoku import Sudoku
 
 from Grid import Grid
@@ -35,6 +35,8 @@ def mouse_bot(unsolved: Sudoku, solved: Sudoku, cell_size: tuple[int, int]) -> N
 
 def on_press(key) -> None:
     if not isinstance(key, keyboard.KeyCode):
+        if key == Key.esc:
+            key_listener.stop()
         return
 
     position = mouse_controller.position

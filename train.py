@@ -7,7 +7,7 @@ from Model import Model
 
 logging.basicConfig(level=logging.INFO, format='[%(levelname)s] %(message)s')
 
-data, labels = util.get_digits('C:\\Users\\Iskak\\Downloads\\digits')
+data, labels = util.get_digits('digits')
 
 data = numpy.asarray(data)
 labels = numpy.asarray(labels)
