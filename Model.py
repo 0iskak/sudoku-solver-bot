@@ -5,7 +5,7 @@ from keras.optimizers import SGD
 
 
 class Model(Sequential):
-    path = 'model'
+    path = 'model\\model'
 
     def __init__(self, shape: tuple):
         super().__init__([

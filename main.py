@@ -24,7 +24,6 @@ def mouse_bot(unsolved: Sudoku, solved: Sudoku, cell_size: tuple[int, int]) -> N
             mouse_controller.move(0, cell_size[1])
 
             solved_cell = solved.board[y][x]
-            print(unsolved.board[y][x])
             if unsolved.board[y][x] is not None:
                 continue
             # noinspection PyTypeChecker

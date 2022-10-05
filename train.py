@@ -14,5 +14,5 @@ labels = numpy.asarray(labels)
 model = Model(data[0].shape)
 model.load()
 
-model.fit(data, labels, 16, 100, 1)
+model.fit(data, labels, 16, 50, 1)
 Model.save_model(model)
