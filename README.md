@@ -1,6 +1,6 @@
 # sudoku-solver-bot
 
-[![](demo/demo.gif)](demo/demo.m4v?raw)
+[![](demo/demo.gif)](demo/demo.m4v?raw=true)
 
 ### Tested only with Python 3.10.7
 1. Get python 3.10.7
