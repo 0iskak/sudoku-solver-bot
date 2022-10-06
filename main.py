@@ -2,8 +2,8 @@ import numpy
 import pynput.mouse
 from PIL import ImageGrab
 from pynput import keyboard
+from pynput.keyboard import Controller as KeyboardController, Key
 from pynput.mouse import Controller as MouseController
-from pynput.keyboard import Controller as KeyboardController, KeyCode, Key
 from sudoku import Sudoku
 
 from Grid import Grid
